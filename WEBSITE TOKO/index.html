@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghaniyy Store - Layanan Akademik & Digital Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo1.png" alt="Ghaniyy Store" class="logo-img"/>
+        <span class="brand-text">Ghaniyy Store</span>
+      </a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()">
+    <div class="menu-content" onclick="event.stopPropagation()">
+      <div class="menu-header">
+        <h2>Menu</h2>
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+      </div>
+      <nav class="menu-nav">
+        <a href="layanan.html">📚 Layanan Akademik</a>
+        <a href="aplikasi.html">📱 Aplikasi Premium</a>
+        <a href="kontak.html">📞 Kontak</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-home">
+    <video autoplay muted loop playsinline class="hero-video-bg">
+      <source src="assets/bagroundweb.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="assets/logoputih.png" alt="Ghaniyy Store Logo" class="hero-logo-img"/>
+        </div>
+        <h1 class="hero-title">Ghaniyy Store</h1>
+        <p class="hero-subtitle">Layanan Akademik & Digital Terpercaya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG KAMI SECTION -->
+  <section class="about-section">
+    <div class="container">
+      <h2 class="section-title">Tentang Kami</h2>
+      <p class="about-intro">
+        Ghaniyy Store adalah penyedia layanan digital yang menawarkan kebutuhan akademik dan hiburan, 
+        mulai dari Cek Turnitin, Jasa Parafrase, Publish Jurnal, Perbaikan Naskah, hingga berbagai 
+        aplikasi premium dengan harga terjangkau.
+      </p>
+      
+      <button class="btn-more" onclick="toggleDetail()">
+        <span id="btnText">Lebih Lanjut</span>
+        <span id="btnIcon">▼</span>
+      </button>
+
+      <div class="about-detail" id="aboutDetail">
+        <p>
+          Ghaniyy Store merupakan penyedia layanan digital terpercaya yang dirancang untuk membantu 
+          pelajar, mahasiswa, penulis, hingga pengguna umum dalam memenuhi berbagai kebutuhan akademik 
+          dan hiburan. Kami menyediakan layanan profesional seperti Cek Turnitin, Jasa Parafrase, 
+          Publish Jurnal, dan Perbaikan Naskah, termasuk pengaturan format penulisan, margin, 
+          daftar isi, daftar pustaka, serta manajemen referensi dengan Mendeley.
+        </p>
+        <p>
+          Selain itu, Ghaniyy Store juga menghadirkan beragam aplikasi premium yang dapat digunakan 
+          untuk meningkatkan produktivitas dan hiburan, seperti Canva Pro, CapCut Pro, Netflix, 
+          Spotify Premium, YouTube Premium, Disney+ Hotstar, QuillBot Premium, dan layanan digital 
+          populer lainnya. Dengan harga yang ramah di kantong dan pelayanan yang responsif, kami 
+          berkomitmen memberikan pengalaman terbaik bagi setiap pengguna.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="why-section">
+    <div class="container">
+      <h2 class="section-title">Kenapa Harus Memilih Ghaniyy Store?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>Terpercaya</h3>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">⭐</div>
+          <h3>Berkualitas</h3>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💼</div>
+          <h3>Profesional</h3>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Fast Response</h3>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Harga Terjangkau</h3>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h3>Garansi</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN HIGHLIGHT SECTION -->
+  <section class="services-highlight">
+    <div class="container">
+      <h2 class="section-title">Layanan Kami</h2>
+      <div class="services-grid">
+        <div class="service-card" onclick="window.location.href='layanan.html'">
+          <div class="service-icon">📚</div>
+          <h3>Layanan Akademik</h3>
+          <p>Cek Turnitin, Parafrase, Publish Jurnal, Perbaikan Naskah, dan banyak lagi</p>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-card" onclick="window.location.href='aplikasi.html'">
+          <div class="service-icon">📱</div>
+          <h3>Aplikasi Premium</h3>
+          <p>Canva Pro, Netflix, Spotify, YouTube Premium, Disney+, dan aplikasi lainnya</p>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Siap Menggunakan Layanan Kami?</h2>
+        <p>Hubungi kami sekarang dan dapatkan solusi terbaik untuk kebutuhan Anda!</p>
+        <a href="https://wa.me/62895374651500?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Ghaniyy%20Store" target="_blank" class="btn-whatsapp">
+          💬 Chat via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Ghaniyy Store</h4>
+          <p>Layanan digital terpercaya untuk kebutuhan akademik dan hiburan Anda sejak 2022.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="layanan.html">Layanan Akademik</a></li>
+            <li><a href="aplikasi.html">Aplikasi Premium</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li>
+              <a href="https://wa.me/62895374651500?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Ghaniyy%20Store" target="_blank">
+                <img src="assets/whatsapp-logo.svg" alt="WhatsApp" class="footer-icon"/> WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ghaniyystore.official?igsh=dGpvbXdjb3ZzbmF2" target="_blank">
+                <img src="assets/instagram-logo.png" alt="Instagram" class="footer-icon"/> Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cs.ghaniyystore@gmail.com">
+                <img src="assets/email-logo.svg" alt="Email" class="footer-icon"/> Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Ghaniyy Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Fungsi Toggle Menu
+    function toggleMenu() {
+      const menuOverlay = document.getElementById('menuOverlay');
+      if (menuOverlay) {
+        menuOverlay.classList.toggle('active');
+      }
+    }
+
+    // Fungsi Toggle Detail
+    function toggleDetail() {
+      const detail = document.getElementById('aboutDetail');
+      const btn = document.querySelector('.btn-more');
+      const btnText = document.getElementById('btnText');
+      
+      if (detail && btn && btnText) {
+        detail.classList.toggle('show');
+        btn.classList.toggle('active');
+        
+        if (detail.classList.contains('show')) {
+          btnText.textContent = 'Sembunyikan';
+        } else {
+          btnText.textContent = 'Lebih Lanjut';
+        }
+      }
+    }
+
+    // Set Year
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+      
+      // Auto play music on first interaction
+      const bgMusic = document.getElementById('bgMusic');
+      if (bgMusic) {
+        const playMusic = () => {
+          bgMusic.play().catch(() => {});
+          document.removeEventListener('click', playMusic);
+          document.removeEventListener('scroll', playMusic);
+          document.removeEventListener('touchstart', playMusic);
+        };
+        document.addEventListener('click', playMusic);
+        document.addEventListener('scroll', playMusic);
+        document.addEventListener('touchstart', playMusic);
+      }
+    });
+  </script>
+  <script src="src/js/products.js"></script>
+  <script src="src/js/app.js"></script>
+
+</body>
+</html>

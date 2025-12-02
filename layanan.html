@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan Akademik - Ghaniyy Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo1.png" alt="Ghaniyy Store" class="logo-img"/>
+        <span class="brand-text">Ghaniyy Store</span>
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span>☰</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="layanan.html" class="active">Layanan Akademik</a>
+        <a href="aplikasi.html">Aplikasi Digital</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+
+      <div class="header-actions">
+        <a id="wa-contact" class="btn btn-primary" target="_blank" href="https://wa.me/62895374651500?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Ghaniyy%20Store">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <a href="index.html" class="btn-back">← Kembali</a>
+      <h1>Layanan Akademik</h1>
+      <p>Solusi profesional untuk kebutuhan akademik Anda</p>
+    </div>
+  </section>
+
+  <!-- LAYANAN GRID -->
+  <section class="section-layanan-page">
+    <div class="container">
+      <div class="layanan-grid">
+        
+        <div class="layanan-card" onclick="orderTurnitin()">
+          <div class="layanan-image">
+            <img src="assets/turnitin-icon.png" alt="Cek Turnitin" />
+          </div>
+          <div class="layanan-content">
+            <h3>Cek Turnitin</h3>
+            <p>Layanan pengecekan plagiarisme menggunakan Turnitin untuk memastikan keaslian karya akademik Anda. Dapatkan laporan detail similarity score.</p>
+            <ul class="layanan-features">
+              <li>✓ Laporan lengkap similarity</li>
+              <li>✓ Hasil dalam 24 jam</li>
+              <li>✓ Harga terjangkau</li>
+            </ul>
+            <button class="btn-order">Order Sekarang</button>
+          </div>
+        </div>
+
+        <div class="layanan-card" onclick="orderParafrase()">
+          <div class="layanan-image">
+            <div class="layanan-icon">📝</div>
+          </div>
+          <div class="layanan-content">
+            <h3>Jasa Parafrase</h3>
+            <p>Jasa parafrase profesional untuk mengurangi similarity score karya akademik Anda tanpa mengubah makna asli konten.</p>
+            <ul class="layanan-features">
+              <li>✓ Parafrase berkualitas</li>
+              <li>✓ Tetap menjaga esensi</li>
+              <li>✓ Revisi</li>
+            </ul>
+            <button class="btn-order">Order Sekarang</button>
+          </div>
+        </div>
+
+        <div class="layanan-card" onclick="orderJurnal()">
+          <div class="layanan-image">
+            <img src="assets/journal-logo.png" alt="Publish Jurnal" />
+          </div>
+          <div class="layanan-content">
+            <h3>Publish Jurnal</h3>
+            <p>Bantuan publikasi jurnal ilmiah di jurnal nasional maupun internasional bereputasi dengan proses yang mudah dan cepat.</p>
+            <ul class="layanan-features">
+              <li>✓ Jurnal terakreditasi</li>
+              <li>✓ Proses mudah</li>
+              <li>✓ Pendampingan lengkap</li>
+            </ul>
+            <button class="btn-order">Order Sekarang</button>
+          </div>
+        </div>
+
+        <div class="layanan-card" onclick="orderNaskah()">
+          <div class="layanan-image">
+            <div class="layanan-icon">✍️</div>
+          </div>
+          <div class="layanan-content">
+            <h3>Perbaikan Naskah</h3>
+            <p>Layanan perbaikan dan editing naskah akademik seperti skripsi, tesis, disertasi, atau artikel jurnal dengan hasil profesional.</p>
+            <ul class="layanan-features">
+              <li>✓ Editor berpengalaman</li>
+              <li>✓ Grammar & struktur</li>
+              <li>✓ Format sesuai standar</li>
+            </ul>
+            <button class="btn-order">Order Sekarang</button>
+          </div>
+        </div>
+
+        <div class="layanan-card" onclick="orderPowerPoint()">
+          <div class="layanan-image">
+            <img src="assets/powerpoint-logo.svg" alt="PowerPoint" />
+          </div>
+          <div class="layanan-content">
+            <h3>Pembuatan PowerPoint</h3>
+            <p>Jasa pembuatan presentasi PowerPoint profesional dan menarik untuk keperluan akademik maupun bisnis dengan desain modern.</p>
+            <ul class="layanan-features">
+              <li>✓ Desain profesional</li>
+              <li>✓ Revisi</li>
+              <li>✓ Format custom</li>
+            </ul>
+            <button class="btn-order">Order Sekarang</button>
+          </div>
+        </div>
+
+        <div class="layanan-card" onclick="orderCustom()">
+          <div class="layanan-image">
+            <div class="layanan-icon">💡</div>
+          </div>
+          <div class="layanan-content">
+            <h3>Request Layanan Lain</h3>
+            <p>Punya kebutuhan khusus? Hubungi kami untuk konsultasi layanan custom yang sesuai dengan kebutuhan akademik Anda.</p>
+            <ul class="layanan-features">
+              <li>✓ Konsultasi gratis</li>
+              <li>✓ Solusi custom</li>
+              <li>✓ Harga bersahabat</li>
+            </ul>
+            <button class="btn-order">Hubungi Kami</button>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="layanan-cta">
+        <h3>Butuh bantuan memilih layanan?</h3>
+        <p>Konsultasikan kebutuhan Anda dengan tim kami untuk mendapatkan solusi terbaik</p>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/62895374651500?text=Halo,%20saya%20ingin%20konsultasi%20layanan%20akademik" target="_blank">Chat Admin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Ghaniyy Store</h4>
+          <p>Layanan digital terpercaya untuk kebutuhan akademik dan hiburan Anda sejak 2022.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="layanan.html">Cek Turnitin</a></li>
+            <li><a href="layanan.html">Parafrase</a></li>
+            <li><a href="layanan.html">Perbaikan Naskah</a></li>
+            <li><a href="layanan.html">Publish Jurnal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="layanan.html">Layanan Akademik</a></li>
+            <li><a href="aplikasi.html">Aplikasi Digital</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li>
+              <a href="https://wa.me/62895374651500?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Ghaniyy%20Store" target="_blank">
+                <img src="assets/whatsapp-logo.svg" alt="WhatsApp" class="footer-icon"/> WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ghaniyystore.official?igsh=dGpvbXdjb3ZzbmF2" target="_blank">
+                <img src="assets/instagram-logo.png" alt="Instagram" class="footer-icon"/> Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cs.ghaniyystore@gmail.com">
+                <img src="assets/email-logo.svg" alt="Email" class="footer-icon"/> Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Ghaniyy Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/products.js"></script>
+  <script src="src/js/app.js"></script>
+  
+  <script>
+    // Order functions untuk layanan akademik
+    function orderTurnitin() {
+      const message = 'Halo Ka, Saya Mau Cek Turnitin';
+      window.open(`https://wa.me/62895374651500?text=${encodeURIComponent(message)}`, '_blank');
+    }
+    
+    function orderParafrase() {
+      window.open('https://s.id/cekbiayaparafrase', '_blank');
+    }
+    
+    function orderJurnal() {
+      const message = 'Halo Ka, Saya Mau Konsultasi untuk Publish Jurnal';
+      window.open(`https://wa.me/62895374651500?text=${encodeURIComponent(message)}`, '_blank');
+    }
+    
+    function orderNaskah() {
+      const message = 'Halo Ka, Saya Mau Jasa Perbaikan Naskah (Daftar Isi, Daftar Pustaka, Mendeley, Margin, atau lainnya)';
+      window.open(`https://wa.me/62895374651500?text=${encodeURIComponent(message)}`, '_blank');
+    }
+    
+    function orderPowerPoint() {
+      const message = 'Halo Ka, Saya Mau Jasa Pembuatan PowerPoint';
+      window.open(`https://wa.me/62895374651500?text=${encodeURIComponent(message)}`, '_blank');
+    }
+    
+    function orderCustom() {
+      const message = 'Halo Ka, saya mau order layanan lainnya (sebutkan layanan yang anda inginkan)';
+      window.open(`https://wa.me/62895374651500?text=${encodeURIComponent(message)}`, '_blank');
+    }
+    
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
